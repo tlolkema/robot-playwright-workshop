@@ -13,11 +13,12 @@
 - Clone the Github repository: https://github.com/tlolkema/robot-workshop/
 
 Open the terminal and go to the location of the repository and run:
-- run: python -m venv env
+- python -m venv env
 - activate virtual env, run:
     - source env/bin/activate (Mac / Linux)
     - env\Scripts\activate (Windows)
 - pip install -r requirements.txt
+- rfbrowser init
 
 > If you have both installed a python2 and python3 version create the python virtualenv with "python3 -m venv env" to enforce python3.
 

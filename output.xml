@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.7.5 on darwin)" generated="20210804 16:20:40.296" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="/Users/timlolkema/robot-playwright/robot-playwright-workshop/exercises/tests.robot">
+<test id="s1-t1" name="Exercise 1 - Use the BrowserLibrary to fill in the form">
+<kw name="Given I Visit The Robot Framework Workshop Website" library="resources">
+<kw name="New Page" library="Browser">
+<arg>${workshop_website}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210804 16:20:41.972" level="INFO">Successfully initialized new page object and opened url: http://localhost:5000</msg>
+<msg timestamp="20210804 16:20:41.972" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<status status="PASS" starttime="20210804 16:20:40.839" endtime="20210804 16:20:41.972"/>
+</kw>
+<status status="PASS" starttime="20210804 16:20:40.838" endtime="20210804 16:20:41.972"/>
+</kw>
+<kw name="When I Input The First Name" library="resources">
+<arg>Test</arg>
+<kw name="Fill Text" library="Browser">
+<arg>${first_name_input}</arg>
+<arg>${first_name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210804 16:20:41.974" level="INFO">Fills the text 'Test' in the given field.</msg>
+<status status="PASS" starttime="20210804 16:20:41.973" endtime="20210804 16:20:42.031"/>
+</kw>
+<status status="PASS" starttime="20210804 16:20:41.973" endtime="20210804 16:20:42.031"/>
+</kw>
+<kw name="And I Input The Last Name" library="resources">
+<arg>User</arg>
+<kw name="Fill Text" library="Browser">
+<arg>${last_name_input}</arg>
+<arg>${last_name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210804 16:20:42.032" level="INFO">Fills the text 'User' in the given field.</msg>
+<status status="PASS" starttime="20210804 16:20:42.032" endtime="20210804 16:20:42.046"/>
+</kw>
+<status status="PASS" starttime="20210804 16:20:42.032" endtime="20210804 16:20:42.047"/>
+</kw>
+<kw name="And I Click The Submit Button" library="resources">
+<kw name="Click" library="Browser">
+<arg>${submit_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210804 16:20:42.047" endtime="20210804 16:20:42.099"/>
+</kw>
+<status status="PASS" starttime="20210804 16:20:42.047" endtime="20210804 16:20:42.099"/>
+</kw>
+<kw name="Then The Output Element Should Contain" library="resources">
+<arg>Test User</arg>
+<kw name="Get Text" library="Browser">
+<var>${element_text}</var>
+<arg>${output_element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.
+See the `Finding elements` section for details about the selectors.</doc>
+<msg timestamp="20210804 16:20:42.177" level="INFO">${element_text} = Ласкаво просимо Test User</msg>
+<status status="PASS" starttime="20210804 16:20:42.100" endtime="20210804 16:20:42.177"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${element_text}</arg>
+<arg>${string}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20210804 16:20:42.177" endtime="20210804 16:20:42.178"/>
+</kw>
+<status status="PASS" starttime="20210804 16:20:42.099" endtime="20210804 16:20:42.178"/>
+</kw>
+<status status="PASS" starttime="20210804 16:20:40.836" endtime="20210804 16:20:42.178"/>
+</test>
+<test id="s1-t2" name="Exercise 2 - Stub the GET /frameworks response">
+<kw>
+<msg timestamp="20210804 16:20:42.210" level="FAIL">Keyword name cannot be empty.</msg>
+<status status="FAIL" starttime="20210804 16:20:42.209" endtime="20210804 16:20:42.210"/>
+</kw>
+<status status="FAIL" starttime="20210804 16:20:42.207" endtime="20210804 16:20:42.210">Keyword name cannot be empty.</status>
+</test>
+<test id="s1-t3" name="Exercise 3 - When GET /frameworks fails an error message should be present">
+<kw>
+<msg timestamp="20210804 16:20:42.215" level="FAIL">Keyword name cannot be empty.</msg>
+<status status="FAIL" starttime="20210804 16:20:42.215" endtime="20210804 16:20:42.215"/>
+</kw>
+<status status="FAIL" starttime="20210804 16:20:42.212" endtime="20210804 16:20:42.215">Keyword name cannot be empty.</status>
+</test>
+<test id="s1-t4" name="Exercise 4 - Validate the response of GET /frameworks against JSON schema">
+<kw>
+<msg timestamp="20210804 16:20:42.220" level="FAIL">Keyword name cannot be empty.</msg>
+<status status="FAIL" starttime="20210804 16:20:42.220" endtime="20210804 16:20:42.220"/>
+</kw>
+<status status="FAIL" starttime="20210804 16:20:42.218" endtime="20210804 16:20:42.221">Keyword name cannot be empty.</status>
+</test>
+<status status="FAIL" starttime="20210804 16:20:40.297" endtime="20210804 16:20:42.224"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210804 16:20:40.490" level="ERROR">Error in file '/Users/timlolkema/robot-playwright/robot-playwright-workshop/exercises/resources.resource' on line 3: Test library 'WorkshopLibrary.py' does not exist.</msg>
+</errors>
+</robot>
