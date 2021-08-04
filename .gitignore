@@ -1,2 +1,5 @@
 env
 env/
+output.xml
+log.html
+playwright-log.txt
