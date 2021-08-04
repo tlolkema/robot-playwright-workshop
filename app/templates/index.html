@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <script src="{{ url_for('static', filename='ajax.js') }}"></script>
+    <title>Robot Framework Workshop</title>
+  </head>
+  <body class="text-center">
+    <div class="svg">
+        <img src="/static/Robot.svg">
+        <div class=data></div>
+        <button onclick="generateError()" id="errorButton" class="btn btn-lg btn-primary btn-block" type="submit">CLICK HERE TO RECEIVE $1.000.000</button>       
+    </div>
+    <form allign="left" class="form-signin">
+      <h1 align="center" class="h1 mb-1 font-weight-normal">Sign-Up</h1>
+      <p class="lead" id="output"></p>
+        <div class="form-group">
+            <label class="sr-only" for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+        </div>
+        <button id="submitButton" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>    
+    </form>
+  </body>
+</html>

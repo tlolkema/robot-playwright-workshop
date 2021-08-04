@@ -1,0 +1,36 @@
+{
+    "frameworks": [
+        {
+            "name": "playwright",
+            "props": {
+                "opensource": true,
+                "commits": 5260,
+                "author": "Microsoft"
+            }
+        },
+        {
+            "name": "robotframework",
+            "props": {
+                "opensource": true,
+                "commits": 12988,
+                "author": "Nokia"
+            }
+        },
+        {
+            "name": "cypress",
+            "props": {
+                "opensource": true,
+                "commits": 15763,
+                "author": "Cypress"
+            }
+        },
+        {
+            "name": "selenium",
+            "props": {
+                "opensource": true,
+                "commits": 27159,
+                "author": "Selenium"
+            }
+        }
+    ]
+}

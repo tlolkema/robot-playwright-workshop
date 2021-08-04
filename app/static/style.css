@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #D6EAF4;
+  overflow: hidden;
+  font-family: 'IBM Plex Mono';font-size: 20px;
+}
+
+.form-signin { 
+  width: 100%;
+  max-width: 600px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 530px;
+  padding-bottom: 530px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: auto;
+}
+
+.data {
+  width: 100%;
+  max-width: 900px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.svg {
+    width: 100%;
+    max-width: 680px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.lead {
+  padding-top: 10px;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table th {
+  background-color: #4B4886;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tr {
+  text-align: left;
+  background-color: #ffffff;
+}
+
+#submitButton {
+  background-color: #4B4886;
+  border: 0px;
+}
+
+#errorButton {
+  background-color: #ED6363;
+  border: 0px;
+}
