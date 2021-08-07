@@ -2,4 +2,7 @@ env
 env/
 output.xml
 log.html
+report.html
 playwright-log.txt
+browser/screenshot
+exercises/__pycache__
