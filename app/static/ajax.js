@@ -31,7 +31,7 @@ $(document).ready(function () {
       },
       error: function () {
         $(".data").append(
-            `<div class="alert alert-danger" role="alert">ERROR: retrieving framework information failed</div>`
+            `<div id="frameworkError" class="alert alert-danger" role="alert">ERROR: retrieving framework information failed</div>`
         );
       },
     });
