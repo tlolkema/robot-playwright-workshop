@@ -1,5 +1,5 @@
 *** Settings ***
-Library   Browser
+Library   Browser    jsextension=exercises/PlaywrightLibrary.js
 Library   ./WorkshopLibrary.py
 
 *** Variables ***
