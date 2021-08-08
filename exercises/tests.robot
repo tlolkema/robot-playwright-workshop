@@ -1,7 +1,7 @@
 *** Settings ***
-Resource   resources.resource
-Test Setup       Run Keywords       I Visit The Robot Framework Workshop Website    Log All Browser Requests
-Test Teardown    Take Screenshot        
+Resource        resources.resource
+Test Setup      Workshop Setup
+Test Teardown   Workshop Teardown 
 
 
 *** Test Cases ***

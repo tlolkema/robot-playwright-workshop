@@ -1,5 +1,8 @@
 *** Settings ***
 Library   Browser    jsextension=exercises/PlaywrightLibrary.js
+Library   Collections
+Library   OperatingSystem
+Library   String
 Library   ./WorkshopLibrary.py
 
 *** Variables ***
@@ -12,6 +15,20 @@ ${alert}              id=frameworkError
 ${money_button}       id=moneyButton            
 
 *** Keywords ***
+Workshop Setup
+   I Visit The Robot Framework Workshop Website
+   Log All Browser Requests
+   Find And Log All Console Errors
+
+Workshop Teardown
+   Take Screenshot
+   ${file}     Get File          playwright-log.txt
+   @{lines}    Split To Lines    ${file}
+   ${count}    Get Match Count   ${lines}    CONSOLE ERROR:*
+   IF  ${count}
+      Fail     Test has failed because ${count} error(s) were found in the browser's console.
+   END
+
 I Visit The Robot Framework Workshop Website
    New Page    ${workshop_website}
 
