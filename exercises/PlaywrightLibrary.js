@@ -24,8 +24,17 @@ async function stub_endpoint_and_return_error(page, args) {
   });
 }
 
+function find_and_log_all_console_errors(page, args) {
+  page.on('console', async msg => {
+    if (msg.type() == "error") {
+      console.log('CONSOLE ERROR: ', msg.text())
+    }
+  });
+}
+
 exports.__esModule = true;
 exports.log_all_browser_requests = log_all_browser_requests;
 exports.disable_styling_and_go_to_page = disable_styling_and_go_to_page;
 exports.stub_endpoint_and_return_file = stub_endpoint_and_return_file;
 exports.stub_endpoint_and_return_error = stub_endpoint_and_return_error;
+exports.find_and_log_all_console_errors = find_and_log_all_console_errors;
