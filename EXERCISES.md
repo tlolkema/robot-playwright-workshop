@@ -23,7 +23,7 @@ Define the missing locators in the variables section of `resources.resource` and
 
 ## Exercise 2
 
-- Use the keyword `When Stub Endpoint And Return File` from the `PlaywrightLibrary.js` to return a response from the JSON file `stub_response.json`
+- Use the keyword `Stub Endpoint And Return File` from the `PlaywrightLibrary.js` to return a response from the JSON file `stub_response.json`
 
 - Use the keywords you made in Exercise 1 to submit the form
 - Validate that the webpage shows the stubbed response
