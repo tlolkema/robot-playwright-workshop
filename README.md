@@ -1,7 +1,7 @@
 # Robot Framework / Playwright Workshop
 
 ***
-<center>[CLICK HERE FOR THE EXERCISES](EXERCISES.md)</center>
+[CLICK HERE FOR THE EXERCISES](EXERCISES.md)
 ***
 
 **Resource:** Rein van der Vegt (https://github.com/Reinaard)
