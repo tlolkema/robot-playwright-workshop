@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "required": ["frameworks"],
+  "properties": {
+    "frameworks": {
+      "$id": "#/properties/frameworks",
+      "type": "array",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/frameworks/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/frameworks/items/anyOf/0",
+            "type": "object",
+            "default": {},
+            "required": ["name", "props"],
+            "properties": {
+              "name": {
+                "$id": "#/properties/frameworks/items/anyOf/0/properties/name",
+                "type": "string",
+                "default": ""
+              },
+              "props": {
+                "$id": "#/properties/frameworks/items/anyOf/0/properties/props",
+                "type": "object",
+                "default": {},
+                "required": ["opensource", "commits", "author"],
+                "properties": {
+                  "opensource": {
+                    "$id": "#/properties/frameworks/items/anyOf/0/properties/props/properties/opensource",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "commits": {
+                    "$id": "#/properties/frameworks/items/anyOf/0/properties/props/properties/commits",
+                    "type": "integer",
+                    "default": 0
+                  },
+                  "author": {
+                    "$id": "#/properties/frameworks/items/anyOf/0/properties/props/properties/author",
+                    "type": "string",
+                    "default": ""
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
