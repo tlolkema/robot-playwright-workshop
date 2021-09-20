@@ -11,11 +11,9 @@ Library   JSONSchemaLibrary  ./exercises/schemas
 *** Variables ***
 ${workshop_website}   http://localhost:5000
 ${first_name_input}   id=firstName
-${last_name_input}    id=lastName
-${submit_button}      id=submitButton
 ${output_element}     id=output
-${alert}              id=frameworkError
-${money_button}       id=moneyButton            
+## Define missing locators here
+         
 
 *** Keywords ***
 Workshop Setup
