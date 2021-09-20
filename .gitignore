@@ -6,3 +6,4 @@ report.html
 playwright-log.txt
 browser/screenshot
 exercises/__pycache__
+solutions/__pycache__

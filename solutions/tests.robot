@@ -1,32 +1,35 @@
 *** Settings ***
 Resource         resources.resource
 Test Setup       Workshop Setup
+Suite Teardown   Workshop Teardown 
 
 
 *** Test Cases ***
 Exercise 1 - Use the BrowserLibrary to fill in the form
     When I Input The First Name     Test
-    ## Use your own keywords here
+    And I Input The Last Name       User
+    And I Click The Submit Button
     Then The Output Element Should Contain   Test User
 
 Exercise 2 - Stub the POST /signup response
     When Stub Endpoint And Return File      /signup     ${CURDIR}/stub_response.json
-    ## Use your own keywords here
+    And I Input The First Name      Test
+    And I Input The Last Name       User
+    And I Click The Submit Button
     Then The Output Element Should Contain      I'm a stubbed response!
 
 Exercise 3 - When GET /frameworks fails an error message should be present
-    ## Use the stub keyword here to force an error on /frameworks
+    When Stub Endpoint And Return Error     /frameworks         418
     And I Reload The Page
     Then There Should Be An Error Containing    ERROR: retrieving framework information failed
 
 Exercise 4 - Validate the response of GET /frameworks against JSON schema
-    ## Use the predefined keywords here to make a request and validate it agains a JSON schema
-    ## You should generate this schema yourself and put it in the 'schemas' folder
+    When I Make A GET Request to /frameworks with the PythonLibrary
+    Then The Response Should Validate Against JSON schema    frameworks-response-schema.json       ${frameworks-response}
 
 Exercise 5 - Click on the $1.000.000 Button
-    ## Use your own keywords here
+    When I Click The $1.000.000 Button
 
 Exercise 6 - Use the PythonLibrary to make a POST to /signup
-    ## Use the predefined keywords here to make a request and validate it agains a JSON schema
-
-## Exercise 7 - Check if any console errors occured during this suite, let the suite fail if errors occured
+    I Make A POST Request To /signup with the PythonLibrary       Robot     Framework
+    Then The Response Should Validate Against JSON schema    signup-response-schema.json       ${signup-response}

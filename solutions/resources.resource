@@ -5,7 +5,7 @@ Library   String
 
 Library   Browser    jsextension=exercises/PlaywrightLibrary.js
 Library   ./PythonLibrary.py
-Library   JSONSchemaLibrary  ./exercises/schemas
+Library   JSONSchemaLibrary  ./solutions/schemas
 
 
 *** Variables ***
@@ -42,7 +42,25 @@ I Input The First Name
    [Arguments]  ${first_name}
    Fill Text    ${first_name_input}   ${first_name}
 
-##                   Write your own Browser keywords here
+I Input The Last Name
+   [Arguments]  ${last_name}
+   Fill Text    ${last_name_input}   ${last_name}
+
+I Click The Submit Button
+   Click        ${submit_button}
+
+I Click The $1.000.000 Button
+   Click        ${money_button}
+
+The Output Element Should Contain
+   [Arguments]   ${string}
+   ${element_text} =   Get Text   ${output_element}
+   Should Contain   ${element_text}      ${string}
+
+There Should Be An Error Containing
+   [Arguments]   ${string}
+   ${element_text} =   Get Text   ${alert}
+   Should Contain   ${element_text}      ${string}
 
 
 ## Custom Library Keywords

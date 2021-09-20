@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/robotframework', methods= ['POST'])
+@app.route('/signup', methods= ['POST'])
 def process():
     first_name = request.form['firstName']
     last_name = request.form['lastName']

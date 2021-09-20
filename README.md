@@ -1,5 +1,7 @@
 # Robot Framework Workshop
 
+[CLICK HERE FOR THE EXERCISES](EXERCISES.md)
+
 **Resource:** Rein van der Vegt (https://github.com/Reinaard)
 
 **Resource:** Tim Lolkema (https://github.com/tlolkema/)
