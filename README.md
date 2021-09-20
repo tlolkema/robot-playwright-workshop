@@ -1,4 +1,4 @@
-# Robot Framework Workshop
+# Robot Framework / Playwright Workshop
 
 [CLICK HERE FOR THE EXERCISES](EXERCISES.md)
 
