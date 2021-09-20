@@ -2,6 +2,7 @@
 Resource         resources.resource
 Test Setup       Workshop Setup
 
+##  See a more detailed description of the exercises at https://github.com/tlolkema/robot-playwright-workshop/blob/main/EXERCISES.md
 
 *** Test Cases ***
 Exercise 1 - Use the BrowserLibrary to fill in the form

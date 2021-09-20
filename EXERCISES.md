@@ -12,6 +12,8 @@ You can use the Browser library keyword documentation to write the missing keywo
 
 > https://marketsquare.github.io/robotframework-browser/Browser.html
 
+Define the missing locators in the variables section of `resources.resource` and use these to write the missing keywords.
+
 ### Exercise 2
 
 - Use the keyword `When Stub Endpoint And Return File` from the `PlaywrightLibrary.js` to return a response from the JSON file `stub_response.json`
@@ -45,4 +47,4 @@ You can use the Browser library keyword documentation to write the missing keywo
 
 ### Bonus Exercise
 
-- Extend the `PlaywrightLibrary` by writing an owm method, and use this in one of your tests
+- Extend the `PlaywrightLibrary` by writing an own method, and use this in one of your tests

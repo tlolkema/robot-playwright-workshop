@@ -3,7 +3,7 @@ Library   Collections
 Library   OperatingSystem
 Library   String
 
-Library   Browser    jsextension=exercises/PlaywrightLibrary.js
+Library   Browser    jsextension=solutions/PlaywrightLibrary.js
 Library   ./PythonLibrary.py
 Library   JSONSchemaLibrary  ./solutions/schemas
 
