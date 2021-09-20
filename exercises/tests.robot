@@ -7,17 +7,17 @@ Test Setup       Workshop Setup
 Exercise 1 - Use the BrowserLibrary to fill in the form
     When I Input The First Name     Test
     ## Use your own keywords here
-    Then The Output Element Should Contain   Test User
+    Then The Output Element Should Contain   ## Put your validation here
 
 Exercise 2 - Stub the POST /signup response
-    When Stub Endpoint And Return File      /signup     ${CURDIR}/stub_response.json
+    When Stub Endpoint And Return File      ## Put the required arguments here
     ## Use your own keywords here
-    Then The Output Element Should Contain      I'm a stubbed response!
+    Then The Output Element Should Contain      ## Put your validation here
 
 Exercise 3 - When GET /frameworks fails an error message should be present
     ## Use the stub keyword here to force an error on /frameworks
     And I Reload The Page
-    Then There Should Be An Error Containing    ERROR: retrieving framework information failed
+    Then There Should Be An Error Containing    ## Put your validation here
 
 Exercise 4 - Validate the response of GET /frameworks against JSON schema
     ## Use the predefined keywords here to make a request and validate it agains a JSON schema
