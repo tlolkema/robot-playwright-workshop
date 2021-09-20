@@ -15,23 +15,23 @@
 - Clone the Github repository: https://github.com/tlolkema/robot-playwright-workshop
 
 Open the terminal and go to the location of the repository and run:
-- python -m venv env
+- `python -m venv env`
 - activate virtual env, run:
-    - source env/bin/activate (Mac / Linux)
-    - env\Scripts\activate (Windows)
-- pip install -r requirements.txt
-- rfbrowser init
+    - `source env/bin/activate` (Mac / Linux)
+    - `env\Scripts\activate` (Windows)
+- `pip install -r requirements.txt`
+- `rfbrowser init`
 
-> If you have both installed a python2 and python3 version create the python virtualenv with "python3 -m venv env" to enforce python3.
+> If you have both installed a python2 and python3 version create the python virtualenv with `python3 -m venv env` to enforce python3.
 
 ### Running the Workshop Application
 
 Open a new terminal and go to the location of the repository:
 - activate virtual env, run:
-    - source env/bin/activate (Mac / Linux)
-    - env\Scripts\activate (Windows)
+    - `source env/bin/activate` (Mac / Linux)
+    - `env\Scripts\activate` (Windows)
 - Navigate to the 'app' directory
-- python app.py
+- `python app.py`
 - The app will be running on http://localhost:5000/
 - Check if you can go to the workshop application, after submitting your name the application should welcome you.
 
