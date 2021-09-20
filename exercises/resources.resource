@@ -50,9 +50,9 @@ The Response Should Validate Against JSON schema
 
 I Make A POST Request To /signup with the PythonLibrary
    [Arguments]         ${first_name}    ${last_name}
-   ${signup-response} =       Post Signup      ${first_name}   ${last_name}
+   ${signup-response}   Post Signup      ${first_name}   ${last_name}
    Set Test Variable   ${signup-response}
 
 I Make A GET Request to /frameworks with the PythonLibrary
-   ${frameworks-response} =       Get Frameworks
+   ${frameworks-response}   Get Frameworks
    Set Test Variable   ${frameworks-response}
