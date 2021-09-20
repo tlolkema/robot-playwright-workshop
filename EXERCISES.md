@@ -26,6 +26,8 @@ Define the missing locators in the variables section of `resources.resource` and
 - Use a keyword in `PlaywrightLibrary.js` to return an error on the `/frameworks` endpoint
 - Validate that the correct error message is shown
 
+> TIP: Use [HTTP 418](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418)
+
 ### Exercise 4
 
 - Generate a JSON schema of the `/frameworks` response
