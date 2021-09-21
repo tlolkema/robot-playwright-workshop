@@ -31,5 +31,10 @@ Exercise 5 - Click on the $1.000.000 Button
     When I Click The $1.000.000 Button
 
 Exercise 6 - Use the PythonLibrary to make a POST to /signup
-    I Make A POST Request To /signup with the PythonLibrary       Robot     Framework
+    When I Make A POST Request To /signup with the PythonLibrary       Robot     Framework
     Then The Response Should Validate Against JSON schema    signup-response-schema.json       ${signup-response}
+
+Bonus 1 - Intercept GET /frameworks with the Browser library and validate the response against JSON schema
+    When I Reload The Page
+    And I Intercept The Request     \/frameworks
+    Then The Response Should Validate Against JSON schema    frameworks-response-schema.json       ${response}

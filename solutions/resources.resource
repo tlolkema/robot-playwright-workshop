@@ -76,3 +76,9 @@ I Make A POST Request To /signup with the PythonLibrary
 I Make A GET Request to /frameworks with the PythonLibrary
    ${frameworks-response}  Get Frameworks
    Set Test Variable   ${frameworks-response}
+
+I Intercept The Request
+   [Arguments]         ${matcher}
+    ${response_dict}    Wait For Response       matcher=${matcher}
+    ${response}         Get From Dictionary     ${response_dict}     body
+    Set Test Variable   ${response}
