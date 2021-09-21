@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, jsonify
 import random
+import time
 
 from flask.helpers import send_from_directory
 
@@ -21,6 +22,7 @@ def process():
 
 @app.route('/frameworks', methods= ['GET'])
 def frameworks():
+    time.sleep(0.5)
     return send_from_directory('static', 'features.json'), 200
     
 
