@@ -7,6 +7,8 @@
 
 > Try to make the exercises yourself, or ask for a hint by one of the teachers before looking at the `solutions` folder.
 
+***
+
 ## Exercise 1
 
 Use the Browser library to:
@@ -54,8 +56,9 @@ Define the missing locators in the variables section of `resources.resource` and
 
 - Let the suite fail if a console error occured during one of the tests
 
+***
 
-### Bonus Exercise 1
+## Bonus Exercise 1
 
 - Intercept GET /frameworks with the Browser library and validate the response against JSON schema
 
@@ -64,7 +67,7 @@ You can use the Browser library keyword documentation:
 > https://marketsquare.github.io/robotframework-browser/Browser.html
 
 
-### Bonus Exercise 2
+## Bonus Exercise 2
 
 - Extend the `PlaywrightLibrary` by writing an own method, and use this in one of your tests
 
