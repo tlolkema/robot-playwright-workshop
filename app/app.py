@@ -22,7 +22,6 @@ def process():
 
 @app.route('/frameworks', methods= ['GET'])
 def frameworks():
-    time.sleep(0.5)
     return send_from_directory('static', 'features.json'), 200
     
 
