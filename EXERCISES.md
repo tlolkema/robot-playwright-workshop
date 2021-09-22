@@ -58,16 +58,7 @@ Define the missing locators in the variables section of `resources.resource` and
 
 ***
 
-## Bonus Exercise 1
-
-- Intercept GET /frameworks with the Browser library and validate the response against JSON schema
-
-You can use the Browser library keyword documentation:
-
-> https://marketsquare.github.io/robotframework-browser/Browser.html
-
-
-## Bonus Exercise 2
+## Bonus Exercise
 
 - Extend the `PlaywrightLibrary` by writing an own method, and use this in one of your tests
 
