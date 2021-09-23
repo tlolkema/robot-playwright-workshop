@@ -40,6 +40,12 @@ I Input The First Name
    [Arguments]  ${first_name}
    Fill Text    ${first_name_input}   ${first_name}
 
+The Output Element Should Contain
+   [Arguments]   ${string}
+   ${element_text} =   Get Text   ${output_element}
+   Should Contain   ${element_text}      ${string}
+
+
 ##                   Write your own Browser keywords here
 
 
