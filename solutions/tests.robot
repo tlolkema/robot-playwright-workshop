@@ -9,6 +9,7 @@ Exercise 1 - Use the BrowserLibrary to fill in the form
     When I Input The First Name     Test
     And I Input The Last Name       User
     And I Click The Submit Button
+    And Wait For Response           matcher=\/signup
     Then The Output Element Should Contain   Test User
 
 Exercise 2 - Stub the POST /signup response

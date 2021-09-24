@@ -7,6 +7,10 @@
 
 > Try to make the exercises yourself, or ask for a hint by one of the teachers before looking at the `solutions` folder.
 
+> Run the tests from the root directory since the paths are configured from there
+
+> Make sure you are editing the contents of `tests.robot` and `resources.resource` form the `exercises` directory
+
 ***
 
 ## Exercise 1
@@ -15,6 +19,7 @@ Use the Browser library to:
 
 - Fill in the form
 - Submit the form
+- Wait for the `/signup` response
 - Validate the welcome text
 
 You can use the Browser library keyword documentation to write the missing keywords:
@@ -23,9 +28,16 @@ You can use the Browser library keyword documentation to write the missing keywo
 
 Define the missing locators in the variables section of `resources.resource` and use these to write the missing keywords.
 
+
 ## Exercise 2
 
 - Use the keyword `Stub Endpoint And Return File` from the `PlaywrightLibrary.js` to return a response from the JSON file `stub_response.json`
+
+- You can point to the JSON file with:
+
+```robotframework
+${CURDIR}/stub_response.json
+```
 
 - Use the keywords you made in Exercise 1 to submit the form
 - Validate that the webpage shows the stubbed response
@@ -33,6 +45,7 @@ Define the missing locators in the variables section of `resources.resource` and
 ## Exercise 3
 
 - Use a keyword in `PlaywrightLibrary.js` to return an error on the `/frameworks` endpoint
+- The error will show in locator `id="frameworkError"`
 - Validate that the correct error message is shown
 
 > **TIP**: Use [HTTP 418](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418)
@@ -42,6 +55,8 @@ Define the missing locators in the variables section of `resources.resource` and
 - Generate a JSON schema of the `/frameworks` response
 - Put this JSON schema in `schemas/frameworks-response-schema.json`
 - Make a request to `/frameworks` to validate the response against the JSON schema (check `resources.resource` for keywords to use)
+
+> **TIP**: Use [jsonschema.net](https://www.jsonschema.net/home) to generate a JSON schema
 
 ## Exercise 5
 
@@ -55,6 +70,7 @@ Define the missing locators in the variables section of `resources.resource` and
 ## Exercise 7
 
 - Let the suite fail if a console error occured during one of the tests
+- You can use the `Workshop Teardown` keyword for this in `resources.resource`
 
 ***
 
