@@ -16,6 +16,7 @@ def process():
     last_name = request.form['lastName']
     welcome_list = ['Welkom', 'Welcome', 'Ласкаво просимо']
     output = f'{first_name} {last_name}'
+    time.sleep(1)
     if first_name and last_name:
       return jsonify({'output': f'{random.choice(welcome_list)} {output}'})
     return jsonify({'error' : 'Missing data!'})

@@ -7,8 +7,6 @@
 
 > Try to make the exercises yourself, or ask for a hint by one of the teachers before looking at the `solutions` folder.
 
-> Run the tests from the root directory since the paths are configured from there
-
 > Make sure you are editing the contents of `tests.robot` and `resources.resource` form the `exercises` directory
 
 ***
