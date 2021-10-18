@@ -12,7 +12,7 @@
 
 ### Installation
 
-- Install python3 and put it in the path. (atleast python 3.6 or any newer version)
+- Install python3 and put it in the path. (at least python 3.6 or any newer version)
 - Install Node.js
 - Clone the Github repository: https://github.com/tlolkema/robot-playwright-workshop
 
