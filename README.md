@@ -37,6 +37,13 @@ Open a new terminal and go to the location of the repository:
 - The app will be running on http://localhost:5000/
 - Check if you can go to the workshop application, after submitting your name the application should welcome you.
 
+### Check if everything is installed correctly
+
+- In a terminal screen with virtualenv enabled run:
+    - `robot validate_install.robot`
+
+The test should pass
+
 ### Code editor
 
 In this workshop you can work with any code editor.
