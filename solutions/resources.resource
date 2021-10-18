@@ -3,9 +3,9 @@ Library   Collections
 Library   OperatingSystem
 Library   String
 
-Library   Browser    jsextension=solutions/PlaywrightLibrary.js
+Library   Browser    jsextension=${CURDIR}/PlaywrightLibrary.js
 Library   ./PythonLibrary.py
-Library   JSONSchemaLibrary  ./solutions/schemas
+Library   JSONSchemaLibrary  ${CURDIR}/schemas
 
 
 *** Variables ***
